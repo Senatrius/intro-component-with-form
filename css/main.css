@@ -97,6 +97,7 @@ body {
 .signup__form .input-block {
   width: 100%;
   margin-bottom: 1.25rem;
+  position: relative;
 }
 
 .signup__form .input-block .input-field {
@@ -137,6 +138,13 @@ body {
   display: none;
 }
 
+.signup__form .input-block .error-icon {
+  position: absolute;
+  top: 20%;
+  right: 6%;
+  visibility: hidden;
+}
+
 .signup__form .input-block.error .input-field {
   border: 2px solid #ff7a7a;
   color: #ff7a7a;
@@ -149,6 +157,10 @@ body {
   font-style: italic;
   text-align: right;
   margin: .2rem 0;
+}
+
+.signup__form .input-block.error .error-icon {
+  visibility: visible;
 }
 
 .signup__form .submit {
@@ -253,6 +265,12 @@ body {
   }
   .signup__form {
     padding: 1.25rem;
+  }
+  .signup .input-block {
+    margin-bottom: 1rem;
+  }
+  .signup .input-block .input-field {
+    padding: .9rem 1rem;
   }
   .signup .submit {
     margin-bottom: 1rem;
