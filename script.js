@@ -61,7 +61,7 @@ function checkValid(input) {
 
 function showError(target, msg) {
   //Replace the error text with the specified message
-  target.nextElementSibling.innerText = msg;
+  target.parentElement.querySelector('.error').innerText = msg;
   //Add the error class to the parent element (.input-block in this case)
   target.parentElement.classList.add('error');
 }
