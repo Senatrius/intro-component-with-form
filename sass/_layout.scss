@@ -39,7 +39,7 @@ body {
 
     display: block;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     background: $secondary-blue;
     text-align: center;
     border-radius: .5rem;
@@ -138,6 +138,99 @@ body {
         text-decoration: none;
         font-weight: 700;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: 80%;
+    padding: 2.5rem 0;
+  }
+
+  .text {
+    &__title {
+      font-size: 2.4rem;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+    }
+  
+    &__desc {
+      line-height: 1.4;
+    }
+  }
+
+  .signup {
+    flex: 0 0 47%;
+
+    &__form {
+      padding: 1.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem 0;
+  }
+
+  .text {
+  
+    &__title {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .signup {
+    &__ad {
+      padding: 1rem 1.2rem;
+    }
+
+    &__form {
+      padding: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .container {
+    flex-direction: column;
+    width: 86%;
+    padding: 5.5rem 0 3.5rem 0;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+
+    &__title {
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__desc {
+      line-height: 1.6;
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  .signup {
+    &__ad {
+      padding: 1rem 1.4rem;
+    }
+
+    &__form {
+      padding: 1.25rem;
+    }
+
+    .submit {
+      margin-bottom: 1rem;
+    }
+
+    .tos {
+      font-size: .7rem;
     }
   }
 }
